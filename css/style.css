@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiro, sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #7C5119;
+	text-decoration: none;
+}
+
+.HP-description {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../image/HPdescription.jpg");
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+}
+
+.toptheme {
+    padding: 200px 0 100px 100px;
+}
+
+.code001 {
+    display: block;
+    font-size: 5rem;
+    font: 'Sawarabi Gothic';
+    color: white;
+    letter-spacing: 10px;
+}
+
+.code002 {
+    color: white;
+    padding-left: 60px;
+    font-size: 2.5rem;
+    font: 'Sawarabi Gothic';
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.description, .link-to-subject {
+    background-color: white;
+    margin: 80px 80px 50px;
+    border:  solid 1px white;
+}
+
+.description-text-top, .link-to-subject h2 {
+    font-size: 4rem;
+    padding: 22px 20px 20px 40px;
+    border-left: solid 5px rgb(120, 120, 120);
+    margin: 30px 30px 30px 60px;
+    background-color: rgb(250, 250, 250);
+}
+
+.description-text {
+    font-size: 2rem;
+    margin: 0 50px 100px;
+    line-height: normal;
+    
+}
+
+.description-text h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.description-text q {
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+}
+
+.link-to-subject div {
+    margin: 50px;
+    text-align: center;
+}
+
+.link-to-subject a {
+    margin: 20px 40px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #fff;
+}
+
+@media (max-width:1000px) {
+
+    .description, .link-to-subject {
+        margin: 80px 30px 50px;
+    }
+
+    .description-text {
+        font-size: 1.2rem;
+    }
+
+    .description-text h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width:860px) {
+
+    .code001 {
+        text-align: center;
+    }
+    
+    .toptheme {
+        padding-left: 0;
+    }
+
+    .code002 {
+        font-size: 1.7rem;
+    }
+
+    .description-text {
+        margin: 0 20px 50px;
+    }
+
+    .description-text-top, .link-to-subject h2 {
+        margin: 25px 25px 25px 40px;
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .code001 {
+        font-size: 3rem;
+
+    }
+
+    .code002 {
+        font-size: 1.2rem;
+        padding-left: 10%;
+    }
+
+    .link-to-subject a {
+        margin: 20px 20px;
+    }
+
+    .link-to-subject div {
+        margin: 20px;
+    }
+
+
+
+}
+
+
+@media (max-width:500px) {
+
+    .description, .link-to-subject {
+        margin: 80px 20px 30px;
+    }
+
+    .description-text-top, .link-to-subject h2 {
+        margin: 25px;
+        padding: 22px 20px 20px 25px;
+    }
+
+}
+
+
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+    overflow: hidden;
+    padding: 1.5rem 6rem;
+    color: #fff;
+    border-radius: 0;
+    background: #000;
+  }
+  
+  a.btn-flat span {
+    position: relative;
+  }
+  
+  a.btn-flat::before {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 150%;
+    height: 500%;
+    content: '';
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
+    transform: translateX(-98%) translateY(-70%) rotate(135deg);
+}
+
+.btn.btn-flat.math::before {
+    background: steelblue;
+}
+
+.btn.btn-flat.physics::before {
+    background: yellowgreen;
+}
+
+.btn.btn.btn-flat.chemistry::before {
+    background: tomato;
+}
+
+.btn.btn-flat.english::before {
+    background: pink;
+}

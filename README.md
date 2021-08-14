@@ -1,2 +1,2 @@
 # Database
-This is Database  by Glässes
+This is a database  by Glässes
